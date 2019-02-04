@@ -10,16 +10,16 @@
     <div class="card-body" style="overflow-y: auto">
       <h4 class="card-title">Winning shot in the final</h4>
       <p class="card-text">
-        In this video we can see the winning shot for the final game between Hungary and France. 
+        Two teams have prevailed in the final for the MadeUp Waterpolo Tournament. Check out the video below where the home side's final, winning shot is gorgeously placed into the top left corner of the net.
       </p>
       <p class="text-center">
         <img src="../assets/img/waterpolo-hun-goal.gif" alt="The winning shot" width="550" />
       </p>
       <p class="card-text">
-        This class is only shown by the most talented players and there are no shortage of such players in both of these teams. However play 9 managed to swing in a shot in the final seconds of the game, giving his team a well deserved win.
+        In the game between Hungary and France the audience witnessed a whopping 16 goals shared by the sides. The final shot and its class is only shown by the most talented players and there are no shortage of such in both of these teams. However player #9 managed to swing in a shot in the final seconds of the game, giving his team a well deserved win.
       </p>
       <p class="card-text">
-        Here are some other photos of the game.
+        Take a look at some additional photos from the final:
         <Carousel />
       </p>
       <p class="card-text">
@@ -30,6 +30,14 @@
 </template>
 
 <script>
+
+function fibonacci(num) {
+  if (num <= 1) return 1;
+  return fibonacci(num - 1) + fibonacci(num - 2);
+}
+/* eslint-disable no-console */
+console.log(`Just for fun: ${fibonacci(43)}`);
+
 import Carousel from './Carousel.vue';
 export default {
   name: 'Article',

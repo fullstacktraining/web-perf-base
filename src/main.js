@@ -8,7 +8,6 @@ import '@/assets/css/app.css';
 
 Vue.config.productionTip = false
 
-Vue.config.productionTip = false
 
 new Vue({
   render: h => h(App),

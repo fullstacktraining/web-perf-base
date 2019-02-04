@@ -1,6 +1,7 @@
 <template>
   <div class="container h-100" id="app">
     <nav class="navbar navbar-expand fixed-top navbar-light bg-light">
+      <a class="navbar-brand" href="/">Watersports Mag</a>
       <div class="navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
           <router-link tag="li" exact-active-class="active" class="nav-link" to="/">Home</router-link>

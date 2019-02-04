@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu Regular'), local('Ubuntu-Regular'), url(/fonts/ubuntu.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Anton';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Anton Regular'), local('Anton-Regular'), url(/fonts/anton.woff2) format('woff2');
+}
+
 html {
   background: url("../img/water-bg.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
