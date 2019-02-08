@@ -1,9 +1,13 @@
 const express = require('express');
 const app = express();
-const history = require('connect-history-api-fallback');
 const port = 80;
-app.use(history());
-app.get('*', (req, res) => {
-  return res.sendFile(`${__dirname}/dist/${req.path}`)
+const buildLocation = 'dist';
+app.use(express.static(buildLocation));
+app.use((req, res, next) => {
+  if (!req.originalUrl.includes(buildLocation)) {
+    res.sendFile(`${__dirname}/${buildLocation}/index.html`);
+  } else {
+    next();
+  }
 });
-app.listen(port, () => console.info(`HTTP server up on port ${port}`));
+app.listen(port, () => console.info(`Server running on port ${port}`));
